@@ -11,10 +11,10 @@ env:
   - JPHP_TEST_CONCURRENT=1
 
 before_install:
-  - wget https://dl.dropboxusercontent.com/u/7897865/apache-maven-3.3.9.zip
-  - unzip -qq apache-maven-3.3.9.zip
-  - export M2_HOME=$PWD/apache-maven-3.3.9
-  - export PATH=$M2_HOME/bin:$PATH
+ - wget https://dl.dropboxusercontent.com/u/7897865/apache-maven-3.3.9.zip
+ - unzip -qq apache-maven-3.3.9.zip
+ - export M2_HOME=$PWD/apache-maven-3.3.9
+ - export PATH=$M2_HOME/bin:$PATH
  - cat /etc/hosts # optionally check the content *before*
  - sudo hostname "$(hostname | cut -c1-63)"
  - sed -e "s/^\\(127\\.0\\.0\\.1.*\\)/\\1 $(hostname | cut -c1-63)/" /etc/hosts | sudo tee /etc/hosts
@@ -22,6 +22,13 @@ before_install:
  - gradle wrapper
  - chmod +x gradlew
 
+notifications:
+ email: false
+  slack:
+    rooms: flakycov:U2MeVOPjdi4up1U793ubeIUZ
+    template:
+    - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository}@%{branch} by %{author} %{result} in %{duration}
+    - 'dashbot: %{repository_name} %{build_id}'
 script: ./gradlew check --stacktrace -Dfile.encoding=UTF-8
 
 addons:
