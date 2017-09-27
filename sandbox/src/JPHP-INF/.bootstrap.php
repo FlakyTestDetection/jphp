@@ -1,1 +1,1 @@
-<?
+<?use php\lib\fs;use php\util\Regex;$result = fs::scan('./sandbox', [    'namePattern' => new Regex('^Build.+', 'i')]);var_dump($result);
