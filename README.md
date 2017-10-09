@@ -33,7 +33,7 @@ Our project started in October 2013. There were a few reasons for that:
 + Using java libraries and classes in PHP code.
 + Unicode for strings (UTF-16, like in Java)
 + Threading, Sockets, Environment architecture (like sandbox objects in the runkit zend extension).
-+ GUI (Swing or JavaFX)
++ GUI (~~Swing~~ or [JavaFX](https://github.com/jphp-compiler/develnext))
 + Embedded cache system for classes and functions
 + Optional Hot Reloading for classes and functions
 + ~~Ability to use on **Android** OS~~ (not yet)
@@ -43,6 +43,9 @@ Our project started in October 2013. There were a few reasons for that:
 + Fix list() behavior inconsistency (SNAPSHOT).
 + Throwable Interface (SNAPSHOT).
 + Group Use Declarations (SNAPSHOT).
++ Scalar and Optional Type Hinting (SNAPSHOT).
++ Return Type Hinting (SNAPSHOT).
++ Void and Iterable Type Hinting (SNAPSHOT).
 + Uniform Variable Syntax (SNAPSHOT, partly).
 
 ### Documentation
