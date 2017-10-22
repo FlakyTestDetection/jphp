@@ -3,7 +3,7 @@ JPHP - an implementation of PHP
 
 [![Build Status](https://travis-ci.org/jphp-compiler/jphp.svg?branch=master)](https://travis-ci.org/jphp-compiler/jphp)  [![Download](https://jitpack.io/v/org.develnext/jphp.svg)](https://jitpack.io/#org.develnext/jphp) [![Documentation Status](https://readthedocs.org/projects/jphp-docs/badge/?version=latest)](https://readthedocs.org/projects/jphp-docs/?badge=latest)
 
-JPHP is a new implementation for PHP which uses the Java VM. It supports many features of the PHP language (5.6+).
+JPHP is a new implementation for PHP which uses the Java VM. It supports many features of the PHP language (7.0+).
 
 How does it work? JPHP is a compiler like `javac`, it compiles php sources to JVM bytecode and then
 can execute the result on the Java VM.
@@ -28,7 +28,7 @@ Our project started in October 2013. There were a few reasons for that:
 
 ### Features
 
-+ PHP 5.6+ (some language features from PHP 7).
++ PHP 5.6+ (and many language features from PHP 7.0 and 7.1).
 + JIT (~2.5 faster PHP 5.6, ~1.1 faster PHP 7), Optimizer - [Performance benchmarks](http://blog.j-php.net/archives/34)
 + Using java libraries and classes in PHP code.
 + Unicode for strings (UTF-16, like in Java)
@@ -40,22 +40,22 @@ Our project started in October 2013. There were a few reasons for that:
 
 **What JPHP supports from PHP 7.0, 7.1?**
 + Context Sensitive Lexer.
-+ Fix list() behavior inconsistency (SNAPSHOT).
-+ Throwable Interface (SNAPSHOT).
-+ Group Use Declarations (SNAPSHOT).
-+ Scalar and Optional Type Hinting (SNAPSHOT).
-+ Return Type Hinting (SNAPSHOT).
-+ Void and Iterable Type Hinting (SNAPSHOT).
-+ Uniform Variable Syntax (SNAPSHOT, partly).
-+ Null Coalesce Operator `??` (SNAPSHOT).
-+ Multiple catch syntax (SNAPSHOT).
-+ Short list syntax (SNAPSHOT).
-+ List Keys (SNAPSHOT).
-+ Class constant visibility modifiers (SNAPSHOT).
-+ Spaceship Operator `<=>` (SNAPSHOT).
-+ Generator Delegation `yield from` (SNAPSHOT).
-+ Generator Return Expressions (SNAPSHOT).
-+ `intdiv()` function (SNAPSHOT).
++ Fix list() behavior inconsistency.
++ Throwable Interface.
++ Group Use Declarations.
++ Scalar and Optional Type Hinting.
++ Return Type Hinting.
++ Void and Iterable Type Hinting.
++ Uniform Variable Syntax (partly).
++ Null Coalesce Operator `??`.
++ Multiple catch syntax.
++ Short list syntax.
++ List Keys.
++ Class constant visibility modifiers.
++ Spaceship Operator `<=>`.
++ Generator Delegation `yield from`.
++ Generator Return Expressions.
++ `intdiv()` function.
 
 ### Documentation
 
